@@ -43,9 +43,9 @@ function Header() {
           )}
         </nav>
         <div className="flex items-center">
-          <a href="#">
+          <Link href="/auth/login">
             <FaUserAlt className="hover:text-primary transition-all me-4" />
-          </a>
+          </Link>
           <a href="#">
             <FaShoppingCart className="hover:text-primary transition-all me-4" />
           </a>
