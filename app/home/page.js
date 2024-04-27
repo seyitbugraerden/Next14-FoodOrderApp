@@ -1,7 +1,7 @@
 import About from "@/components/About";
 import Campaigns from "@/components/Campaigns";
 import Carousel from "@/components/Carousel";
-import Input from "@/components/form/Input";
+import Reservation from "@/components/Reservation";
 import Header from "@/components/layouts/Header";
 import MenuWrapper from "@/components/product/MenuWrapper";
 import React from "react";
@@ -14,7 +14,7 @@ function Home() {
       <Campaigns />
       <MenuWrapper />
       <About />
-      <Input />
+      <Reservation />
     </div>
   );
 }

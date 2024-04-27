@@ -3,8 +3,13 @@
 @tailwind utilities;
 
 .btn-primary {
-    @apply text-white px-[30px] py-[8px] rounded-3xl bg-primary cursor-pointer hover:opacity-70 transition-all;
+  @apply text-white px-[30px] py-[8px] rounded-3xl bg-primary cursor-pointer hover:opacity-70 transition-all;
+}
+.container {
+  @apply w-[90%] xl:w-[1140px];
+}
+@media (max-width: 470px) {
+  iframe {
+    height: 340px;
   }
-.container{
-  @apply w-[90%] xl:w-[1140px]
 }
