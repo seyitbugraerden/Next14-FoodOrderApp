@@ -25,7 +25,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="md:flex-1">
-            <Link href='/'>
+            <Link href="/">
               <Title addClass="text-[38px]">Feane</Title>
             </Link>
             <p className="mt-3">
@@ -35,33 +35,33 @@ const Footer = () => {
             <div className="flex items-center justify-center mt-5 gap-x-2">
               <a
                 href=""
-                className="w-8 h-8 grid place-content-center bg-white text-secondary rounded-full "
+                className="w-8 h-8 grid place-content-center bg-white text-secondary rounded-full hover:bg-primary hover:text-secondary"
               >
-                <i className="fa fa-facebook"></i>
+                <i className="fa fa-facebook "></i>
               </a>
               <a
                 href=""
-                className="w-8 h-8 grid place-content-center bg-white text-secondary rounded-full"
+                className="w-8 h-8 grid place-content-center bg-white text-secondary rounded-full hover:bg-primary hover:text-secondary"
               >
-                <i className="fa fa-twitter"></i>
+                <i className="fa fa-twitter "></i>
               </a>
               <a
                 href=""
-                className="w-8 h-8 grid place-content-center bg-white text-secondary rounded-full"
+                className="w-8 h-8 grid place-content-center bg-white text-secondary rounded-full hover:bg-primary hover:text-secondary"
               >
-                <i className="fa fa-linkedin"></i>
+                <i className="fa fa-linkedin "></i>
               </a>
               <a
                 href=""
-                className="w-8 h-8 grid place-content-center bg-white text-secondary rounded-full"
+                className="w-8 h-8 grid place-content-center bg-white text-secondary rounded-full hover:bg-primary hover:text-secondary"
               >
-                <i className="fa fa-instagram"></i>
+                <i className="fa fa-instagram "></i>
               </a>
               <a
                 href=""
-                className="w-8 h-8 grid place-content-center bg-white text-secondary rounded-full"
+                className="w-8 h-8 grid place-content-center bg-white text-secondary rounded-full hover:bg-primary hover:text-secondary"
               >
-                <i className="fa fa-pinterest"></i>
+                <i className="fa fa-pinterest "></i>
               </a>
             </div>
           </div>
