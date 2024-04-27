@@ -30,7 +30,7 @@ const CampaignItem = () => {
 
 const Campaigns = () => {
   return (
-    <div className="flex justify-between container mx-auto py-20 gap-6 flex-wrap">
+    <div className="flex container justify-between mx-auto gap-6 py-20 flex-wrap">
       <CampaignItem />
       <CampaignItem />
     </div>
