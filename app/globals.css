@@ -5,3 +5,6 @@
 .btn-primary {
     @apply text-white px-[30px] py-[8px] rounded-3xl bg-primary cursor-pointer hover:opacity-70 transition-all;
   }
+.container{
+  @apply w-[90%] xl:w-[1400px]
+}

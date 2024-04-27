@@ -10,12 +10,12 @@ function Header() {
   const [isMenuModal, setIsMenuModal] = useState(false);
   return (
     <div className="h-[5.5rem] bg-secondary">
-      <div className="w-[90%] mx-auto text-white flex justify-between items-center h-full">
+      <div className="container mx-auto text-white flex justify-between items-center h-full">
         <Logo />
         <nav
           className={`sm:static absolute top-0 left-0 sm:w-auto sm:h-auto w-full h-full sm:text-white text-black sm:bg-transparent bg-white sm:flex hidden ${
             isMenuModal === true && "!grid place-content-center"
-          }`}
+          }`} style={{zIndex:'99'}}
         >
           <ul className="flex gap-x-2 sm:flex-row flex-col items-center">
             <li className="px-[5px] py-[10px] uppercase hover:text-primary cursor-pointer">
@@ -33,10 +33,10 @@ function Header() {
           </ul>
           {isMenuModal && (
             <button
-              className="absolute  top-8 right-4 z-50"
+              className="absolute  top-8 right-5"
               onClick={() => setIsMenuModal(false)}
             >
-              <GiCancel size={25} className=" transition-all" />
+              <GiCancel size={25} className="transition-all" />
             </button>
           )}
         </nav>
