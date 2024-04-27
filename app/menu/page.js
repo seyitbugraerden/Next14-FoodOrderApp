@@ -4,8 +4,8 @@ export const metadata = {
   title: "Menu Page",
   description: "Menu",
 };
-function Menu() {
+function Page() {
   return <div>Menu</div>;
 }
 
-export default Menu;
+export default Page;

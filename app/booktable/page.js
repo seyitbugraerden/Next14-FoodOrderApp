@@ -4,8 +4,8 @@ export const metadata = {
   title: "Booktable Page",
   description: "Booktable",
 };
-function Booktable() {
+function Page() {
   return <div>page</div>;
 }
 
-export default Booktable;
+export default Page;
