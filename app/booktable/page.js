@@ -1,3 +1,4 @@
+import Reservation from "@/components/Reservation";
 import React from "react";
 
 export const metadata = {
@@ -5,7 +6,11 @@ export const metadata = {
   description: "Booktable",
 };
 function Page() {
-  return <div>page</div>;
+  return (
+    <>
+      <Reservation />
+    </>
+  );
 }
 
 export default Page;
