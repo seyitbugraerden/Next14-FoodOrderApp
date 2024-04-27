@@ -1,3 +1,5 @@
+import Header from "@/components/layouts/Header";
+import Footer from "@/components/layouts/Footer";
 import "./globals.css";
 
 export const metadata = {
@@ -27,7 +29,11 @@ export default function RootLayout({ children }) {
           referrerpolicy="no-referrer"
         />
       </head>
-      <body className="h-screen">{children}</body>
+      <body className="h-screen">
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

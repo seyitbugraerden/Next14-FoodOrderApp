@@ -2,6 +2,7 @@
 import { FaUserAlt, FaShoppingCart, FaSearch } from "react-icons/fa";
 import { useState } from "react";
 import { GiCancel, GiHamburgerMenu } from "react-icons/gi";
+import Link from "next/link";
 import Logo from "../ui/Logo";
 import Search from "../ui/Search";
 
@@ -9,26 +10,27 @@ function Header() {
   const [isSearchModal, setIsSearchModal] = useState(false);
   const [isMenuModal, setIsMenuModal] = useState(false);
   return (
-    <div className="h-[5.5rem] bg-secondary">
+    <header className="h-[5.5rem] bg-secondary">
       <div className="container mx-auto text-white flex justify-between items-center h-full">
         <Logo />
         <nav
           className={`sm:static absolute top-0 left-0 sm:w-auto sm:h-auto w-full h-full sm:text-white text-black sm:bg-transparent bg-white sm:flex hidden ${
             isMenuModal === true && "!grid place-content-center"
-          }`} style={{zIndex:'99'}}
+          }`}
+          style={{ zIndex: "99" }}
         >
           <ul className="flex gap-x-2 sm:flex-row flex-col items-center">
             <li className="px-[5px] py-[10px] uppercase hover:text-primary cursor-pointer">
-              <a href="/home">Home</a>
+              <Link href="/">Home</Link>
             </li>
             <li className="px-[5px] py-[10px] uppercase hover:text-primary cursor-pointer">
-              <a href="/menu">Menu</a>
+              <Link href="/menu">Menu</Link>
             </li>
             <li className="px-[5px] py-[10px] uppercase hover:text-primary cursor-pointer">
-              <a href="/about">About</a>
+              <Link href="/about">About</Link>
             </li>
             <li className="px-[5px] py-[10px] uppercase hover:text-primary cursor-pointer">
-              <a href="/booktable">Book Table</a>
+              <Link href="/booktable">Book Table</Link>
             </li>
           </ul>
           {isMenuModal && (
@@ -67,7 +69,7 @@ function Header() {
         </div>
       </div>
       {isSearchModal && <Search setIsSearchModal={setIsSearchModal} />}
-    </div>
+    </header>
   );
 }
 
