@@ -1,9 +1,9 @@
 "use client";
-import Logo from "../ui/Logo";
 import { FaUserAlt, FaShoppingCart, FaSearch } from "react-icons/fa";
 import { useState } from "react";
-import Search from "../ui/Search";
 import { GiCancel, GiHamburgerMenu } from "react-icons/gi";
+import Logo from "../ui/Logo";
+import Search from "../ui/Search";
 
 function Header() {
   const [isSearchModal, setIsSearchModal] = useState(false);
@@ -40,17 +40,17 @@ function Header() {
             </button>
           )}
         </nav>
-        <div className="flex gap-x-4 items-center">
+        <div className="flex items-center">
           <a href="#">
-            <FaUserAlt className="hover:text-primary transition-all" />
+            <FaUserAlt className="hover:text-primary transition-all me-4" />
           </a>
           <a href="#">
-            <FaShoppingCart className="hover:text-primary transition-all" />
+            <FaShoppingCart className="hover:text-primary transition-all me-4" />
           </a>
           <button>
             <FaSearch
               onClick={() => setIsSearchModal(true)}
-              className="hover:text-primary transition-all"
+              className="hover:text-primary transition-all me-4"
             />
           </button>
           <button
