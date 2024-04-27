@@ -1,9 +1,9 @@
 import About from "@/components/About";
 import Campaigns from "@/components/Campaigns";
 import Carousel from "@/components/Carousel";
+import Input from "@/components/form/Input";
 import Header from "@/components/layouts/Header";
 import MenuWrapper from "@/components/product/MenuWrapper";
-import ProductDetail from "../../components/product/ProductDetail";
 import React from "react";
 
 function Home() {
@@ -14,6 +14,7 @@ function Home() {
       <Campaigns />
       <MenuWrapper />
       <About />
+      <Input />
     </div>
   );
 }
