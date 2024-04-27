@@ -14,7 +14,7 @@ const Search = ({ setIsSearchModal }) => {
             <input
               type="text"
               placeholder="Search..."
-              className="border w-full my-10"
+              className="w-full my-10 border-solid border-2 px-3 py-2"
             />
             <ul>
               <li className="flex items-center justify-between cursor-pointer p-1 px-2 hover:bg-primary transition-all">
