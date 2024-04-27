@@ -1,6 +1,9 @@
+import Header from "@/components/layouts/Header";
 
 export default function Home() {
-  return <main >
-    <a href='/movie' className="font-dancing">Movie</a>
-  </main>;
+  return (
+    <main>
+      <Header />
+    </main>
+  );
 }
