@@ -3,7 +3,6 @@ import React from "react";
 import Title from "./ui/Title";
 
 const Carousel = () => {
-  
   return (
     <div
       className="h-screen w-full container mx-auto mt-[88px]"
