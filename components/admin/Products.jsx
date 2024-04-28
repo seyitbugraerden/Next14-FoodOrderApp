@@ -1,5 +1,5 @@
 import Title from "../ui/Title";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const Products = () => {
   return (
