@@ -1,3 +1,4 @@
+import MenuWrapper from "@/components/product/MenuWrapper";
 import React from "react";
 
 export const metadata = {
@@ -5,7 +6,11 @@ export const metadata = {
   description: "Menu",
 };
 function Page() {
-  return <div>Menu</div>;
+  return (
+    <>
+      <MenuWrapper />
+    </>
+  );
 }
 
 export default Page;

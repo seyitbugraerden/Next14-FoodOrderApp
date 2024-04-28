@@ -14,7 +14,7 @@ function Reservation() {
           height="85%"
           allowfullscreen="false"
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
           className="rounded-xl"
         ></iframe>
       </div>
