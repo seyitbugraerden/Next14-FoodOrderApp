@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Title from "../../components/ui/Title";
+import Link from "next/link";
 
 const Page = () => {
   return (
@@ -51,11 +52,11 @@ const Page = () => {
             <b>Total: </b>$20
           </div>
 
-          <div>
+          <Link href='/order'>
             <button className="btn-primary mt-4 md:w-auto w-52">
               CHECKOUT NOW!
             </button>
-          </div>
+          </Link>
         </div>
       </div>
     </div>
