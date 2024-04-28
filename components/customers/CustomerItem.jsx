@@ -24,7 +24,7 @@ const CustomerItem = ({ imgSrc }) => {
           alt=""
           layout="fill"
           objectFit="contain"
-          className="rounded-full"
+          className="rounded-full" 
         />
       </div>
     </div>

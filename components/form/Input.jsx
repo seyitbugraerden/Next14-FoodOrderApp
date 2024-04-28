@@ -19,7 +19,7 @@ const Input = () => {
         placeholder="Your Email"
       />
       <select className="border-solid border-[1px] py-[12px] px-6 rounded-md focus:outline-0 focus:border-1 border-[#999] color-black mb-4">
-        <option selected disabled>
+        <option disabled>
           How Many Persons?
         </option>
         <option value="1">1</option>

@@ -19,6 +19,7 @@ const Page = () => {
             width={100}
             height={100}
             className="rounded-full"
+            objectFit="cover"
           />
           <b className="text-2xl mt-1">John Doe</b>
         </div>
