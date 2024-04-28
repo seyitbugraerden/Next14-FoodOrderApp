@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import Title from "./ui/Title";
+import Title from "../ui/Title";
 
 function Admin() {
   return (
