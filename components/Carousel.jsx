@@ -37,7 +37,7 @@ const Carousel = () => {
       <div className="relative text-white top-56 flex flex-col items-start gap-y-10 ">
         {perBox.map((item, index) => (
           <div
-            className={`absolute w-screen slide-left  ${
+            className={`absolute md:w-screen slide-left  ${
               index !== perItem ? "slide-right" : ""
             }`}
             key={index}
