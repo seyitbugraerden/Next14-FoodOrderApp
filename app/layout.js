@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
           referrerPolicy="no-referrer"
         />
       </head>
-      <body className="h-screen">
+      <body className="h-screen !overflow-x-hidden">
         <Header />
         {children}
         <Footer />

@@ -13,3 +13,30 @@
     height: 340px;
   }
 }
+
+@keyframes slide-left {
+  from {
+    margin-left: 70vw;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
+
+.slide-left {
+  animation: 1s slide-left;
+}
+
+@keyframes slide-right {
+  from {
+    margin-right: 0px;
+  }
+  to {
+    transform: translateX(-70vw);
+    opacity: 0;
+  }
+}
+
+.slide-right {
+  animation: 1s slide-right forwards;
+}

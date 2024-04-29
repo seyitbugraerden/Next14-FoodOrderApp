@@ -1,13 +1,29 @@
+"use client";
 import Image from "next/legacy/image";
-import React from "react";
+import React, { useState } from "react";
 import Title from "./ui/Title";
 
 const Carousel = () => {
+  const [perBox, setPerBox] = useState([
+    {
+      Title: "Fast Food Restaurant",
+      Parag:
+        "Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.",
+    },
+    {
+      Title: "Fast Food Restaurant",
+      Parag:
+        "Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.",
+    },
+    {
+      Title: "Fast Food Restaurant",
+      Parag:
+        "Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.",
+    },
+  ]);
+  const [perItem, setPerItem] = useState(0);
   return (
-    <div
-      className="h-screen w-full container mx-auto mt-[88px]"
-      style={{ zIndex: "-9" }}
-    >
+    <div className="h-screen w-full container mx-auto" style={{ zIndex: "-9" }}>
       <div className="absolute top-[88px] left-0 w-full h-full">
         <div className="relative h-full w-full">
           <Image
@@ -18,15 +34,32 @@ const Carousel = () => {
           />
         </div>
       </div>
-      <div className="relative text-white top-48 flex flex-col items-start gap-y-10">
-        <Title addClass="text-6xl">Fast Food Restaurant</Title>
-        <p className="text-sm sm:w-2/5 w-full">
-          Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente
-          ad mollitia laborum quam quisquam esse error unde. Tempora ex
-          doloremque, labore, sunt repellat dolore, iste magni quos nihil
-          ducimus libero ipsam.
-        </p>
-        <button className="btn-primary">Order Now</button>
+      <div className="relative text-white top-56 flex flex-col items-start gap-y-10 ">
+        {perBox.map((item, index) => (
+          <div
+            className={`absolute w-screen slide-left  ${
+              index !== perItem ? "slide-right" : ""
+            }`}
+            key={index}
+          >
+            <Title addClass="text-6xl">{item.Title}</Title>
+            <p className="text-sm sm:w-2/5 w-full mb-5 pr-36">{item.Parag}</p>
+            <button className="btn-primary">Order Now</button>
+          </div>
+        ))}
+        <div className="flex flex-row gap-2 mt-96">
+          {perBox.map((item, index) => (
+            <span
+              key={index}
+              className={`w-[10px] h-[10px] bg-white rounded-full hover:bg-primary cursor-pointer inline-block  ${
+                perItem === index ? "!bg-primary scale-[1.6]" : ""
+              }`}
+              onClick={() => {
+                setPerItem(index);
+              }}
+            ></span>
+          ))}
+        </div>
       </div>
     </div>
   );
