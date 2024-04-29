@@ -1,12 +1,10 @@
 "use client";
 import ProductDetail from "@/components/product/ProductDetail";
-import React from "react";
-
+import productList from "../../../mock/db.json";
 function Page({ params }) {
-  console.log(params.id);
   return (
     <>
-      <ProductDetail />
+      <ProductDetail selectedItem={productList[params.id]} />
     </>
   );
 }
