@@ -7,6 +7,7 @@ import headerTitle from "@/mock/header.json";
 const Carousel = () => {
   const [perBox, setPerBox] = useState(headerTitle);
   const [perItem, setPerItem] = useState(0);
+
   return (
     <div className="h-screen w-full container mx-auto" style={{ zIndex: "-9" }}>
       <div className="absolute top-[88px] left-0 w-full h-full">
