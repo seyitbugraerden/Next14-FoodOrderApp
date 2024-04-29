@@ -2,25 +2,10 @@
 import Image from "next/legacy/image";
 import React, { useState } from "react";
 import Title from "./ui/Title";
+import headerTitle from "@/mock/header.json";
 
 const Carousel = () => {
-  const [perBox, setPerBox] = useState([
-    {
-      Title: "Fast Food Restaurant",
-      Parag:
-        "Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.",
-    },
-    {
-      Title: "Fast Food Restaurant",
-      Parag:
-        "Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.",
-    },
-    {
-      Title: "Fast Food Restaurant",
-      Parag:
-        "Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.",
-    },
-  ]);
+  const [perBox, setPerBox] = useState(headerTitle);
   const [perItem, setPerItem] = useState(0);
   return (
     <div className="h-screen w-full container mx-auto" style={{ zIndex: "-9" }}>
