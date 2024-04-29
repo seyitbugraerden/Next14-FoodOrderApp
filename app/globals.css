@@ -40,3 +40,18 @@
 .slide-right {
   animation: 1s slide-right forwards;
 }
+
+@keyframes zoom-scale {
+  from {
+    scale: 0.5;
+    opacity: 0.5;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+.zoom-scale {
+  animation: 0.4s zoom-scale forwards;
+}
