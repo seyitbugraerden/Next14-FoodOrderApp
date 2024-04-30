@@ -33,7 +33,7 @@
   }
   to {
     transform: translateX(-70vw);
-    opacity: 0;
+    display:none
   }
 }
 
